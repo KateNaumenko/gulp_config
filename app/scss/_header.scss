@@ -1,0 +1,39 @@
+.header-absolute {
+  top: 35px;
+  width: 100%;
+}
+
+.head-logo-font {
+  color: $primary-border-color;
+  font: $logo-large-font-size $header-logo-text;
+
+  .large-logo-font {
+    margin-bottom: -5px;
+    display: block;
+  }
+
+  .less-logo-font {
+    font-size: $logo-small-font-size;
+  }
+}
+
+.space,
+.menu-space {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  width: 460px;
+  font: $primary-font-size $secondary-font;
+  text-transform: uppercase;
+
+  &.menu-space {
+    flex-direction: row;
+  }
+}
+
+.anchors:hover {
+  border-bottom: 2px solid $primary-text-color;
+  text-transform: capitalize;
+}

@@ -1,0 +1,41 @@
+.home-bg {
+  background: repeating-linear-gradient(
+                  135deg,
+                  $secondary-home-bg-color,
+                  $secondary-home-bg-color 150px,
+                  $primary-home-bg-color 150px,
+                  $primary-home-bg-color 350px
+  );
+}
+
+.home-left {
+  margin-top: 260px;
+
+  .largest-header {
+    color: $primary-text-color;
+    font: $header-large-font-size $tertiary-font;
+  }
+
+  .home-text {
+    color: $primary-text-color;
+    font: #{$tertiary-font-size}/$tertiary-line-height $tertiary-font;
+    opacity: .5;
+  }
+}
+
+.home-btn {
+  width: 160px;
+  margin: 20px 10px;
+}
+
+.down-arrow {
+  width: 45px;
+  height: 45px;
+  margin: 130px 0 0 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.home-right {
+  margin-top: 110px;
+}

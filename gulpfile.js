@@ -5,6 +5,7 @@ var imagemin     = require('gulp-imagemin');
 var pngquant     = require('imagemin-pngquant');
 var cache        = require('gulp-cache');
 var autoprefixer = require('gulp-autoprefixer');
+var del          = require('del');
 
 gulp.task('sass', function () {
     return gulp.src('app/scss/**/*.scss')
@@ -12,6 +13,10 @@ gulp.task('sass', function () {
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
         .pipe(gulp.dest('dist/css'))
         .pipe(browserSync.reload({stream: true}));
+});
+
+gulp.task('clean', function () {
+    del.sync(['./dist']);
 });
 
 gulp.task('img', function () {
@@ -54,7 +59,7 @@ gulp.task('browser-sync', function () {
     });
 });
 
-gulp.task('watch', [ 'browser-sync', 'sass', 'font', 'html', 'img'], function () {
+gulp.task('watch', [ 'clean', 'browser-sync', 'sass', 'font', 'html', 'img'], function () {
     gulp.watch('app/scss/**/*.scss', ['sass']);
     gulp.watch('app/**/*.html' , ['html'], browserSync.reload);
     gulp.watch('app/img/**/*', ['img'], browserSync.reload);

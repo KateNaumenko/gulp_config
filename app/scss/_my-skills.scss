@@ -1,0 +1,45 @@
+.my-skills {
+  padding: 140px 0 125px;
+
+  .graph {
+    position: relative;
+
+    .diagram {
+      margin-bottom: 15px;
+      display: flex;
+    }
+
+    .xd-logo,
+    .ae-logo,
+    .ps-logo,
+    .ai-logo {
+      bottom: -25px;
+    }
+
+    .xd-logo {
+      left: 155px;
+    }
+
+    .ae-logo {
+      left: 380px;
+    }
+
+    .ps-logo {
+      left: 610px;
+    }
+
+    .ai-logo {
+      left: 815px;
+    }
+  }
+}
+
+.percents {
+  position: relative;
+  bottom: 24px;
+
+  .percent {
+    color: $primary-text-color;
+    font: #{$percent-font-size}/$secondary-line-height $secondary-font;
+  }
+}

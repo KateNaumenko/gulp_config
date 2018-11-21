@@ -1,0 +1,43 @@
+.portfolio {
+  background-color: $primary-bg-color;
+  padding: 150px 0 125px;
+
+  .img-portfolio {
+    margin: 10px;
+    position: relative;
+  }
+
+  .first-in-row {
+    margin-left: 0;
+  }
+
+  .last-in-row {
+    margin-right: 0;
+  }
+}
+
+.img-portfolio:hover {
+  box-shadow: 0 0 35px 10px $shadow-color;
+  transition: .5s ease;
+
+  .tiny {
+    opacity: 1;
+    visibility: visible;
+    transition: .5s ease;
+  }
+}
+
+.tiny {
+  position: absolute;
+  display: block;
+  width: 55px;
+  height: 55px;
+  top: 140px;
+  left: 155px;
+  opacity: 0;
+  transition: .5s ease;
+  visibility: hidden;
+  background: $primary-color;
+  line-height: 3.5;
+}
+

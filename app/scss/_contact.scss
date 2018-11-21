@@ -1,0 +1,76 @@
+.contact {
+  margin-top: 155px;
+  padding: 170px 0 140px;
+  background-image: url("../img/contact_bg.png");
+  background-size: cover;
+  margin-bottom: -65px;
+
+  .contact-head {
+    color: $primary-color;
+
+    &:before {
+      border-color: $primary-color;
+      opacity: .6;
+    }
+  }
+}
+
+.list-input {
+  max-width: 770px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .fields {
+    padding: 20px 10px;
+    border: 1px solid $primary-text-color;
+
+    &::-webkit-input-placeholder {
+      font: #{$primary-font-size}/$secondary-line-height $secondary-font;
+      color: $secondary-text-color;
+      opacity: .8;
+    }
+  }
+
+  .name-field,
+  .email-field {
+    width: 345px;
+    margin-bottom: 30px;
+  }
+
+  .message-field {
+    padding-top: 0;
+    resize: none;
+    width: 748px;
+  }
+}
+
+.arrow {
+  width: 100%;
+  height: 0;
+  display: flex;
+  justify-content: flex-end;
+
+  .up-arrow {
+    position: relative;
+    right: -100px;
+    bottom: 50px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    background-color: $primary-color;
+  }
+}
+
+.submit {
+  width: 100%;
+
+  .send {
+    padding: 0 50px 0 30px;
+    background: $primary-color url("../img/send-button.png") no-repeat center right;
+    background-position-x: 75px;
+    text-transform: uppercase;
+  }
+}

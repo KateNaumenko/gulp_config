@@ -1,0 +1,28 @@
+.funfast {
+  max-height: 300px;
+  padding: 60px 0;
+  background-color: $primary-bg-color;
+
+  .fast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    white-space: pre-line;
+
+    .funfast-img {
+      height: 100px;
+      object-fit: cover;
+    }
+
+    .funfast-bold-text {
+      font: $fourth-seniority-font-size $tertiary-font;
+      color: $secondary-text-color;
+    }
+
+    .funfast-text {
+      color: $secondary-text-color;
+      font: #{$tertiary-font-size}/$primary-line-height $secondary-font;
+      text-transform: uppercase;
+    }
+  }
+}

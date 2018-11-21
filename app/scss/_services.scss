@@ -1,0 +1,22 @@
+.service {
+  background-color: $primary-bg-color;
+  padding: 120px 0;
+
+  .service-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    white-space: pre-line;
+
+    .service-icon {
+      padding: 0 150px;
+    }
+
+    .figure-text {
+      margin-top: 15px;
+      color: $primary-text-color;
+      font: $services-text-font-size $tertiary-font;
+    }
+  }
+}

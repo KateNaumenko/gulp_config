@@ -1,0 +1,47 @@
+.testimonial {
+  padding: 150px 0 120px;
+
+  .comment-block {
+    max-width: 955px;
+    margin: auto;
+    border: 1px solid $primary-border-color;
+
+    .avatar {
+      padding: 85px 30px 50px 120px;
+    }
+  }
+}
+
+.comment {
+  text-align: start;
+  padding-right: 75px;
+
+  .avatar-name {
+    color: $secondary-text-color;
+    font: #{$fourth-seniority-font-size}/$primary-line-height $tertiary-font;
+  }
+
+  .post {
+    color: $secondary-text-color;
+    font: $testimonial-font-size $post-font;
+  }
+
+  .comment-text {
+    padding-top: 20px;
+    opacity: .6;
+    color: $secondary-text-color;
+    font: #{$primary-font-size}/$primary-line-height $secondary-font;
+    text-transform: uppercase;
+    white-space: pre-line;
+  }
+}
+
+.rectangles {
+  padding-bottom: 40px;
+
+  .rectangle {
+    width: 13px;
+    height: 13px;
+    border: 1px solid $primary-border-color;
+  }
+}

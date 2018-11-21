@@ -1,0 +1,19 @@
+.about-left {
+  margin-top: 175px;
+  white-space: pre-line;
+
+  .header-about {
+    margin-bottom: 0;
+
+    &:before {
+      left: 0;
+    }
+  }
+
+  .about-text {
+    color: $primary-text-color;
+    font: #{$primary-font-size}/$primary-line-height $secondary-font;
+  }
+}
+
+.about-right { margin: 100px 0 125px; }
